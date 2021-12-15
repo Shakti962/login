@@ -1,2 +1,0 @@
-ID: shakti
-Password: 12345678

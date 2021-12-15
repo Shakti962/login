@@ -1,0 +1,162 @@
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1e21;
+    color: #ffffff;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+button:hover{
+    color: #1a1e21 !important;
+}
+a, a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.color-yellow{
+    color: #f6ce42;
+}
+.bg-yellow{
+    background-color: #f6ce42;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/*Divider*/
+.divider{
+    color: #f6ce42;
+    margin: 0;
+}
+.divider hr{
+    height: 2px;
+}
+/*NavBar*/
+nav{
+    margin: 0;
+    background-color: #1a1e21;
+}
+.side-nav .closebtn{
+    display: none;
+}
+.logo{
+    width: 150px;
+}
+.nav-img{
+    width: 43px;
+}
+.navbar-link{
+    padding: 8px;
+    transition-duration: 0s !important;
+}
+.navbar-link:hover{
+    background-color: #f6ce42;
+    color: #1a1e21;
+    padding: 8px;
+    border-radius: 15px;
+}
+.active{
+    background-color: #f6ce42;
+    color: #1a1e21;
+    padding: 8px;
+    border-radius: 15px;
+}
+.active:hover{
+    color: #1a1e21;
+}
+/*admin-card-Section*/
+.admin-card{
+    border: 2px solid #f6ce42;
+    border-radius: 6px;
+}
+
+/*About Us*/
+.end-line{
+    word-spacing: 2px;
+    font-size: 15px;
+}
+/*Login.html*/
+input{
+    border: none;
+    outline: none;
+    background-color: #1a1e21;
+    color: #fff;
+    border-bottom: 1px solid #f6ce42;
+}
+.login-btn{
+    border: 1px solid #f6ce42;
+    border-radius: 20px;
+    color: #f6ce42;
+    padding: 8px 20px;
+    margin: 30px 20px 10px 0;
+}
+.login-btn:hover{
+    background-color: #f6ce42;
+    color: #1a1e21;
+}
+/***************** For Smallest Device *******************/
+/***************** For Mobile Device *******************/
+@media only screen and (max-width: 600px) {
+    nav{
+        margin: 0;
+    }
+    .nav-img{
+        width: 35px;
+        padding-top: 10px;
+    }
+    #about div div b{
+        display: block;
+    }
+    /*login.php*/
+    .login-block{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .login-block div input{
+        width: 100% !important;
+    }
+}
+/***************** For Tablet Device *******************/
+@media only screen and (max-width: 991px) and (min-width: 601px){
+
+}
+/***************** For Both Mobile & Tablet Device *******************/
+@media only screen and (max-width: 991px){
+    .navbar-link:hover{
+        background-color: #1a1e21;
+        color: #fff;
+        padding: 8px 0;
+    }
+    .side-nav{
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #1a1e21;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+    }
+    .side-nav .closebtn{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 26px;
+        margin-left: 50px;
+    }
+    .active{
+        border-radius: 0;
+    }
+    .login-block div input{
+        text-align: center;
+    }
+    .login-img{
+        width: 150px;
+    }
+}
